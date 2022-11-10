@@ -1,18 +1,22 @@
-//check if it is square or not of rectangle
+//write a program to  find max three given number
 #include<iostream>
 using namespace std;
 int main (){
-    int leanth ,breadth;
-    cout<<"Enter the rectangle leanth"<<endl;
-    cin>>leanth;
-    cout<<"Enter the rectangle breadth"<<endl;
-    cin>>breadth;
-    if (leanth==breadth){
-        cout<<"it is square"<<endl;
+    int a,b,c;
+    cin>>a>>b>>c;
+    if (a>b){
+        if (a>c){
+            cout<<a<<endl;
+        }else{
+            cout<<c<<endl;
+        }
+    }else{
+        if (b>c){
+            cout<<b<<endl;
+        }else{
+            cout<<c<<endl;
+        }
     }
-    else
-    {
-        cout<<"it is not square"<<endl;
-    }
+
     return 0;
 }
